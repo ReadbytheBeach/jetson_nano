@@ -1,10 +1,12 @@
 import cv2
 print(cv2.__version__)
 import numpy as np
+import time
 from adafruit_servokit import ServoKit
 kit=ServoKit(channels=16)
 
 pan=90
+time.sleep(1)
 tilt=125
 
 kit.servo[0].angle = pan
